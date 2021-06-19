@@ -155,6 +155,18 @@ npm run start:dev or npm run start
 - You must install mongodb: https://docs.mongodb.com/guides/server/install
 - Create database: https://docs.mongodb.com/manual/mongo/
 
+## RabbitMq
+
+###### if you want to send message to queue, you must
+
+- Deploy RabbitMq: https://www.rabbitmq.com/install-homebrew.html
+- open terminal and run command 
+```
+sudo service rabbitmq-server restart
+```
+- Realese **sendMessageToRabbitMq** in buisness service, and assign queueName property in Class.
+
+
 
 
 
