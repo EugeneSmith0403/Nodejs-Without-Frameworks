@@ -43,7 +43,9 @@ export class Route {
         this._req.method === ix.method &&
         result !== false
       ) {
-        result = cb(result);
+        setTimeout(() => {
+          result = cb(result);
+        }, 0)
       }
     });
   }
